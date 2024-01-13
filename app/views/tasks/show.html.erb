@@ -1,0 +1,6 @@
+<h1>Mark as done</h1>
+
+<p>Title: <%= @task.title %></p>
+<p>Details: <%= @task.details %></p>
+
+<%= link_to "Remove Task", tasks_path, method: :delete %>
