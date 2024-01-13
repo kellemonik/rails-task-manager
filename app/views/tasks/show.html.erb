@@ -3,4 +3,4 @@
 <p>Title: <%= @task.title %></p>
 <p>Details: <%= @task.details %></p>
 
-<%= link_to "Remove Task", tasks_path, method: :delete %>
+<%= link_to "Remove Task", task_path(@task), data: {turbo_method: :delete, turbo_confirm: "Are you sure to remove ?"} %>
